@@ -19,13 +19,15 @@ with support for version history and user-specific access control.
 
 ## 🛠️ Tech Stack
 
-| Component       | Technology            |
-|----------------|------------------------|
+| Component       | Technology              |
+|----------------|--------------------------|
 | Backend         | ASP.NET Core 8 (Web API) |
-| Auth            | JWT (JSON Web Token)    |
-| Database        | SQL Server (BLOB support) |
-| ORM             | Entity Framework Core   |
-| Testing         | xUnit, Moq              |
+| Auth            | JWT (JSON Web Token)     |
+| Database        | SQL Server               |
+| ORM             | Entity Framework Core    |
+| Testing         | xUnit, Moq               |
+| AI Assistance   | ChatGPT (OpenAI)         |
+
 
 ---
 

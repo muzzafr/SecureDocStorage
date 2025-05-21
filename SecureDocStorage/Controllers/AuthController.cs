@@ -62,9 +62,10 @@ namespace SecureDocStorage.Controllers
 
         private bool VerifyPassword(string password, byte[] hash, byte[] salt)
         {
-            using var hmac = new HMACSHA256();
+            using var hmac = new HMACSHA256(salt);  
             var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
             return computedHash.SequenceEqual(hash);
         }
+
     }
 }
