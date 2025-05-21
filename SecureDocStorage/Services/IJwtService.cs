@@ -2,6 +2,6 @@
 {
     public interface IJwtService
     {
-        string GenerateToken(int userId, string username); // ✅ No 'public', no body
+        string GenerateToken(int userId, string username); 
     }
 }
