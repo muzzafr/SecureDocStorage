@@ -34,5 +34,5 @@ with support for version history and user-specific access control.
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/muzzafr/SecureDocStorage
+   git clone https://github.com/muzzafr/SecureDocStorage/tree/main/SecureDocStorage
    cd SecureDocStorage
