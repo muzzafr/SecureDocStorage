@@ -14,6 +14,7 @@ var jwtkey = builder.Configuration["Jwt:key"] ?? "ThisIsASecretKeyForJWTDonotUse
 // Register EF Core with SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 // JWT Authentication Setup
 builder.Services.AddAuthentication(options =>

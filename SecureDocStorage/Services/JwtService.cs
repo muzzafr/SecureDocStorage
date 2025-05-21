@@ -5,7 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace SecureDocStorage.Services
 {
-    public class JwtService
+    public class JwtService : IJwtService
     {
         private readonly string _secret;
         

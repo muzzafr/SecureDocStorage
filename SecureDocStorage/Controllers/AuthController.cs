@@ -14,9 +14,10 @@ namespace SecureDocStorage.Controllers
     public class AuthController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        private readonly JwtService _jwtService;
+        private readonly IJwtService _jwtService;
+        
 
-        public AuthController(ApplicationDbContext context, JwtService jwtService)
+        public AuthController(ApplicationDbContext context, IJwtService jwtService)
         {
             _context = context;
             _jwtService = jwtService;
