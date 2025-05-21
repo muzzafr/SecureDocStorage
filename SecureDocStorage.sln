@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureDocStorage", "SecureDocStorage\SecureDocStorage.csproj", "{AED2F968-858D-4246-86D6-7D94E3C21F0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureDocStorage.Tests", "SecureDocStorage.Tests\SecureDocStorage.Tests.csproj", "{DDC69453-3E47-4DA0-90F3-3B65CC54821A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AED2F968-858D-4246-86D6-7D94E3C21F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AED2F968-858D-4246-86D6-7D94E3C21F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AED2F968-858D-4246-86D6-7D94E3C21F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC69453-3E47-4DA0-90F3-3B65CC54821A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC69453-3E47-4DA0-90F3-3B65CC54821A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC69453-3E47-4DA0-90F3-3B65CC54821A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC69453-3E47-4DA0-90F3-3B65CC54821A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
