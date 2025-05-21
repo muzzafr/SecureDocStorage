@@ -22,8 +22,8 @@ namespace SecureDocStorage.Tests
 
             _context = new ApplicationDbContext(options);
 
-            var jwtServiceMock = new Mock<JwtService>(null);
-            jwtServiceMock.Setup(x => x.GenerateToken(It.IsAny<int>(), It.IsAny<string>())).Returns("fake-jwt");
+            var jwtServiceMock = new Mock<IJwtService>();
+            jwtServiceMock.Setup(x => x.GenerateToken(It.IsAny<int>(), It.IsAny<string>())).Returns("fake-jwt-token");
 
             _controller = new AuthController(_context, jwtServiceMock.Object);
         }
