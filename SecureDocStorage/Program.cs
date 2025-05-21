@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SecureDocStorage.Data;
+using SecureDocStorage.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ var jwtkey = builder.Configuration["Jwt:key"] ?? "ThisIsASecretKeyForJWTDonotUse
 
 // Register EF Core with SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<JwtService>();
 
 // JWT Authentication Setup
 builder.Services.AddAuthentication(options =>
