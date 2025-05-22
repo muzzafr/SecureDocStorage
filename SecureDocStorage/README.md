@@ -38,3 +38,11 @@ with support for version history and user-specific access control.
    ```bash
    git clone https://github.com/muzzafr/SecureDocStorage/tree/main/SecureDocStorage
    cd SecureDocStorage
+
+
+---
+
+## 🎥 Demo Video
+
+Watch the project demo on Loom:  
+[▶️ Watch Demo](https://www.loom.com/share/45a39b349a4f41f28c784d8c117943f0?sid=bddc802f-f0da-4fe7-a91b-317ff9dd5d0a)
